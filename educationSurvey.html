@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<style>
+#title{
+  text-align: center;
+}
+
+#description{
+  font-size:20px;
+  text-align:center;
+}
+
+</style>
+
+<h1 id = "title">Survey Form</h1>
+
+<p id="description">Gathering Education Information</p>
+
+<form id="survey-form"> 
+          
+          <label id = "name-label">Name<br><input type="text" required id="name" placeholder="Enter your Name"></label><br><br>
+         <label id = "email-label">Email<br><input type="email" required id="email" placeholder="Enter your Email"> </label><br><br>
+
+
+  <label id = "number-label">Age<br><input type="number" id="number" min="1" max="130" placeholder="Age"> </label><br><br>
+  Check All that Apply: <br>
+<label id="American Indian or Alaska Native"><input type="checkbox" name="nationality" id="American Indian or Alaska Native" value="American Indian or Alaska Native">American Indian or Alaska Native</input> <br>
+  <label id="Asian"><input type="checkbox" name="nationality" id="Asian" value="Asian">Asian</input>
+  <br>
+  <label id="Black or African American"><input type="checkbox" name="nationality" id="Black or African American" value="Black or African American">Black or African American</input> <br>
+    <label id="Hispanic/Latino"><input type="checkbox" name="nationality" id="Hispanic/Latino" value="Hispanic/Latino">Hispanic/Latino</input> <br>
+      <label id="Native Hawaiian or Other Pacific Islander"><input type="checkbox" name="nationality" id="Native Hawaiian or Other Pacific Islander" value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</input> <br>
+      <label id="White"><input type="checkbox" name="nationality" id="White" value="White">White</input> <br><br>
+ 
+Gender:  
+    <label for id="gender"><input type="radio" id="gender" name="gender" value="female">Female   
+    <label for id="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+      
+    <label for id="other"><input type="radio" id="other" name="gender" value="other">Other</label>
+    <br><br>
+ If Other Please Specify: <br><textarea></textarea>  <br><br>
+  
+  
+  <label for="education">Select Highest Level Education: <select name="education" id="dropdown">
+    <option value="default"></option>
+    <option value = "High School or Equivalent">High School or Equivalent</option>
+      <option value="Technical or Occupational Certificate">Technical or Occupational Certificate</option>
+    <option value="Associate Degree">Associate Degree</option>
+    <option value="Some college coursework completed">Some College Coursework Completed</option>
+    <option value="Master's Degree">Master's Degree</option>
+    <option value="Doctorate">Doctorate</option>
+    <option> <value="Professional">Professional</option>
+   </label>
+    </select>
+<br><br>
+  <button id="submit" type = "submit">Submit</button>
+      
+      </form>
+                       
